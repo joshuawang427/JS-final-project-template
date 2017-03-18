@@ -34,10 +34,9 @@ function draw() {
 			enemies.splice(i,1);
 		}
 		ctx.drawImage ( enimg,enemies[i].x,enemies[i].y );
+		ctx.drawImage (casimg,576,416 ,64,64);
 		enemies[i].move();
 	}
-
-	ctx.drawImage (casimg,576,416 ,64,64);
 
 	ctx.fillText("HP:"+HP,0,20);
 	ctx.font = "25px Arial";
